@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href={{ url_for('static', filename='css/overview.css') }} />
+{% endblock %}
+
+{% block content %}
+<div class="container overview-header">
+    <div class="col-md-10 col-md-offset-1">
+        <h1>Overview</h1>
+        <h4>something something</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="#" class="list-group-item disabled">Overview</a>
+                <a href="/user/goals" class="list-group-item">Goals</a>
+                <a href="#" class="list-group-item">Net Worth</a>
+                <a href="#" class="list-group-item">Spending</a>
+                <a href="#" class="list-group-item">Transactions</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <button>Toggle</button>
+            <div id="toggle-me-timbers" style="display: show">Tabling</div>
+            <div id="toggle-me-timbers" style="display: none">Graphing</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postbody %}
+<script>
+ $( "button" ).click(function() {
+     debugger;
+     $("#toggle-me-timbers").toggle();
+ });
+</script>
+{% endblock %}

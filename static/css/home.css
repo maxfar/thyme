@@ -1,0 +1,36 @@
+body > .container {
+    padding-top: 30px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.masthead {
+    text-align: center;
+    background-image: url(/static/img/triangles.jpg),linear-gradient(30deg,#2276ad,#6ec654);
+    background-color: #2276ad;
+    background-size: cover;
+    background-position-y: 17%;
+    height: 240px;
+    width: 100%;
+}
+
+.masthead > h1 {
+    color: #FFF;
+    letter-spacing: -.03em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+.explanation {
+    text-align: center;
+    height: 300px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid rgba(230,230,230,0.75);
+}

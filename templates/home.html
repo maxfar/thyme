@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    {{ super() }}
+    {% endblock %}
+  </head>
+  <body>
+    {% block content %}
+    <div class="container masthead">
+      <h1>Open Source Financial Planning</h1>
+      <a class="btn btn-default" href="#what" role="button">What</a>
+      <a class="btn btn-default" href="#how" role="button">How</a>
+      <a class="btn btn-default" href="#why" role="button">Why</a>
+    </div>
+
+    <div class="container explanations">
+      <div class="col-md-6 col-md-offset-3 explanation" name="what">
+        <h2>What</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu consectetur tellus. Phasellus id auctor lacus. Aenean odio purus, laoreet sit amet purus non, hendrerit efficitur eros. Donec quis velit massa. Phasellus lacinia augue ac urna dapibus tempus. Nullam in justo sit amet risus dignissim venenatis a at tortor. Integer dignissim ultrices lacus eu convallis. Suspendisse at interdum orci. Proin ultrices orci in ipsum ullamcorper, in suscipit lacus ultricies. Curabitur cursus consequat sagittis. In tempus pharetra maximus. Nunc sed pretium turpis, dignissim maximus leo. Vestibulum vel luctus eros.
+        </p>
+      </div>
+      <div class="col-md-6 col-md-offset-3 explanation" id="how">
+        <h2>How</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu consectetur tellus. Phasellus id auctor lacus. Aenean odio purus, laoreet sit amet purus non, hendrerit efficitur eros. Donec quis velit massa. Phasellus lacinia augue ac urna dapibus tempus. Nullam in justo sit amet risus dignissim venenatis a at tortor. Integer dignissim ultrices lacus eu convallis. Suspendisse at interdum orci. Proin ultrices orci in ipsum ullamcorper, in suscipit lacus ultricies. Curabitur cursus consequat sagittis. In tempus pharetra maximus. Nunc sed pretium turpis, dignissim maximus leo. Vestibulum vel luctus eros.
+        </p>
+      </div>
+      <div class="col-md-6 col-md-offset-3 explanation" id="why">
+        <h2>Why</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu consectetur tellus. Phasellus id auctor lacus. Aenean odio purus, laoreet sit amet purus non, hendrerit efficitur eros. Donec quis velit massa. Phasellus lacinia augue ac urna dapibus tempus. Nullam in justo sit amet risus dignissim venenatis a at tortor. Integer dignissim ultrices lacus eu convallis. Suspendisse at interdum orci. Proin ultrices orci in ipsum ullamcorper, in suscipit lacus ultricies. Curabitur cursus consequat sagittis. In tempus pharetra maximus. Nunc sed pretium turpis, dignissim maximus leo. Vestibulum vel luctus eros.
+        </p>
+      </div>
+    </div>
+    {% endblock %}
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Thyme is better than Mint</p>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
