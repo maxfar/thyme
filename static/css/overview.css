@@ -5,3 +5,33 @@
 .overview-header .list-group-item {
     text-align: left;
 }
+
+.from-the-forums {
+    height: 400px;
+    background-color: red;
+}
+
+.recent-activity {
+    height: 40px;
+    background-color: grey;
+}
+
+.overview-item-summary {
+    height: 360px;
+}
+
+.goals {
+    background-color: blue;
+}
+
+.net-worth {
+    background-color: yellow;
+}
+
+.spending {
+    background-color: purple;
+}
+
+.transactions {
+    background-color: green;
+}

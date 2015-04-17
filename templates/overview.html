@@ -7,9 +7,11 @@
 
 {% block content %}
 <div class="container overview-header">
-    <div class="col-md-10 col-md-offset-1">
-        <h1>Overview</h1>
-        <h4>something something</h4>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>Overview</h1>
+            <h4>something something</h4>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-2">
@@ -21,10 +23,32 @@
                 <a href="#" class="list-group-item">Transactions</a>
             </div>
         </div>
-        <div class="col-md-6">
-            <button>Toggle</button>
-            <div id="toggle-me-timbers" style="display: show">Tabling</div>
-            <div id="toggle-me-timbers" style="display: none">Graphing</div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-12 recent-activity">
+                    Recent Activity
+                </div>
+                <div class="col-md-3 overview-item-summary goals">
+                    Goals
+                </div>
+                <div class="col-md-3 overview-item-summary net-worth">
+                    Net Worth
+                </div>
+                <div class="col-md-3 overview-item-summary spending">
+                    Spending
+                </div>
+                <div class="col-md-3 overview-item-summary transactions">
+                    Transactions
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 from-the-forums">
+            Community Stuff
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2 advertising">
+            advertising?
         </div>
     </div>
 </div>
