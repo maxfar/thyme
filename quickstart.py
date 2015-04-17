@@ -1,4 +1,3 @@
-import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash
 import flask
 
@@ -11,6 +10,7 @@ from apiclient.discovery import build
 from apiclient.http import MediaFileUpload
 from oauth2client import client
 from oauth2client.file import Storage
+from google.appengine.api import users
 
 CLIENT_ID = '67639165534-iat1fois0eu3u0uq7cfn3fano7nemetq.apps.googleusercontent.com'
 CLIENT_SECRET = 'fCI3SAnwZS8NuJA78uQWDY0k'
@@ -31,9 +31,18 @@ def index():
     return render_template('home.html')
 
 
+@app.route('/login')
+def login():
+    user = users.get_current_user()
+    if user:
+        return flask.redirect('/user/overview')
+    else:
+        return flask.redirect(users.create_login_url('/user/overview'))
+
+
 @app.route('/user/overview')
 def user():
-    return render_template('overview.html')
+    return render_template('overview.html', logout_url = users.create_logout_url('/'))
 
 @app.route('/wipe')
 def wipe():

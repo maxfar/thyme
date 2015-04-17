@@ -5,60 +5,64 @@
 <link rel="stylesheet" href={{ url_for('static', filename='css/overview.css') }} />
 {% endblock %}
 
+{% block menuright %}
+<li><a href="{{ logout_url }}">Logout</a></li>
+{% endblock %}
+
 {% block content %}
 <div class="container overview-header">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <h1>Overview</h1>
-            <h4>something something</h4>
-        </div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h1>Overview</h1>
+      <h4>something something</h4>
     </div>
-    <div class="row">
-        <div class="col-md-2">
-            <div class="list-group">
-                <a href="#" class="list-group-item disabled">Overview</a>
-                <a href="/user/goals" class="list-group-item">Goals</a>
-                <a href="#" class="list-group-item">Net Worth</a>
-                <a href="#" class="list-group-item">Spending</a>
-                <a href="#" class="list-group-item">Transactions</a>
-            </div>
-        </div>
-        <div class="col-md-8">
-            <div class="row">
-                <div class="col-md-12 recent-activity">
-                    Recent Activity
-                </div>
-                <div class="col-md-3 overview-item-summary goals">
-                    Goals
-                </div>
-                <div class="col-md-3 overview-item-summary net-worth">
-                    Net Worth
-                </div>
-                <div class="col-md-3 overview-item-summary spending">
-                    Spending
-                </div>
-                <div class="col-md-3 overview-item-summary transactions">
-                    Transactions
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2 from-the-forums">
-            Community Stuff
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="list-group">
+        <a href="#" class="list-group-item disabled">Overview</a>
+        <a href="/user/goals" class="list-group-item">Goals</a>
+        <a href="#" class="list-group-item">Net Worth</a>
+        <a href="#" class="list-group-item">Spending</a>
+        <a href="#" class="list-group-item">Transactions</a>
+      </div>
     </div>
-    <div class="row">
-        <div class="col-md-10 col-md-offset-2 advertising">
-            advertising?
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12 recent-activity">
+          Recent Activity
         </div>
+        <div class="col-md-3 overview-item-summary goals">
+          Goals
+        </div>
+        <div class="col-md-3 overview-item-summary net-worth">
+          Net Worth
+        </div>
+        <div class="col-md-3 overview-item-summary spending">
+          Spending
+        </div>
+        <div class="col-md-3 overview-item-summary transactions">
+          Transactions
+        </div>
+      </div>
     </div>
+    <div class="col-md-2 from-the-forums">
+      Community Stuff
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-2 advertising">
+      advertising?
+    </div>
+  </div>
 </div>
 {% endblock %}
 
 {% block postbody %}
 <script>
- $( "button" ).click(function() {
-     debugger;
-     $("#toggle-me-timbers").toggle();
- });
+  $( "button" ).click(function() {
+  debugger;
+  $("#toggle-me-timbers").toggle();
+  });
 </script>
 {% endblock %}
