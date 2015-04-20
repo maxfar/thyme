@@ -12,6 +12,9 @@ from oauth2client import client
 from oauth2client.file import Storage
 from google.appengine.api import users
 
+#Blueprints
+from goals.goals import goals
+
 CLIENT_ID = '67639165534-iat1fois0eu3u0uq7cfn3fano7nemetq.apps.googleusercontent.com'
 CLIENT_SECRET = 'fCI3SAnwZS8NuJA78uQWDY0k'
 OAUTH_SCOPE = 'https://www.googleapis.com/auth/drive'
@@ -21,9 +24,11 @@ REDIRECT_URI = 'urn:ietf:wg:oauth:2.0:oob'
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
 PASSWORD = 'default'
+DEBUG = True
 
 app = Flask(__name__)
 app.config.from_object(__name__)
+app.register_blueprint(goals, url_prefix='/user/goals')
 
 
 @app.route('/')
@@ -89,4 +94,4 @@ def oauth2callback():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
